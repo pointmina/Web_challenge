@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trial</title>
+    <style>
+        @font-face {
+          font-family: "Han";
+          src: url("HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+          font-style: normal;
+        }
+
+        * {
+            font-family:'Han', serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 80%;
+            height: 450px;
+            margin: 150px auto;
+            background-color: #fdfdff;
+            border-radius: 2em;
+            box-shadow: 5px 5px 7px 2px rgba(128, 119, 255, 0.297);
+        }
+
+        .left_frame{
+            float: left;
+            background : linear-gradient(hsl(252, 65%, 46%),hsl(241, 81%, 54%));
+            width: 50%;
+            height: 100%;
+            border-radius: 2em;
+            }
+
+        .right_frame{
+            float: right;
+            background-color: rgb(255, 255, 255);
+            width: 50%;
+            height: 100%;
+            border-radius: 2em;
+        }
+        
+        .right_frame_container{
+            display:inline-flex;
+            width: 80%;
+            height: 90%;
+            margin: 8%;
+            background-color: #ffffff;
+            border-radius: 2em;
+            
+        }
+
+        #circle {
+            width : 150px;
+            height : 150px;
+            border-radius: 50%;
+            background : linear-gradient(hsl(252, 66%, 38%),hsl(241, 81%, 54%));
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            }
+
+        #box{
+            float: left;
+            width : 237px;
+            height : 50px;
+            border-radius: 0.5em;
+            margin: 0px 0px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+
+        }
+
+        .box_margin {
+	        margin-top: 10px;
+        }
+
+        .f_box {
+            float: left;
+            width : 237px;
+            height : 50px;
+            border-radius: 2em;
+            margin: 0px 0px;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            background-color: hsl(224, 30%, 27%);
+            
+        }
+
+        .f_box:hover {
+            background: linear-gradient(hsl(252, 65%, 46%),hsl(241, 81%, 54%));
+        }
+        
+
+
+    </style>
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="left_frame">
+            <br>
+            <h2 style="text-align: center; color: #ffffffa9;">Your Result</h2>
+            <div id="circle">
+                <h1 style="font-size: 50px; color: #fdfdff;">76</h1>
+            </div>
+            <h2 style="color:#fdfdff">Great</h2>
+            <span style="color:#fdfdff9c">you scored higher than 65% of<br>
+            the people who have taken <br>
+            these tests.</span>
+            </div>
+        <div class="right_frame">
+            <div class="right_frame_container">
+                <div style="display: flex; flex-direction: column;">
+                <h2 style="text-align: left;">Summary</h2>
+                <div id="box" style="background-color: hsla(0, 100%, 67%, 0.164);">
+                    <input type="image" src="icon-reaction.svg">
+                    <span style="color: hsl(0, 100%, 67%);">&nbsp&nbsp&nbsp  Reactoin &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 80/100</span>
+                </div>
+                
+                <div id="box" style="margin-top: 8px; background-color: hsla(39, 100%, 56%, 0.193);">
+                    <input type="image" src="icon-memory.svg">
+                    <span style="color:  hsla(39, 100%, 50%, 0.468);">&nbsp&nbsp&nbsp  Memory &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 92/100</span>
+
+                </div>
+                
+                <div id="box" style="margin-top: 8px; background-color: hsla(166, 100%, 37%, 0.14);">
+                    <input type="image" src="icon-verbal.svg">
+                    <span style="color: hsla(166, 100%, 37%);">&nbsp&nbsp&nbsp&nbsp&nbsp&nbspVerbal &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 61/100</span>
+
+                </div>
+                
+                <div id="box" style="margin-top: 8px; background-color: hsla(234, 85%, 45%, 0.194);">
+                    <input type="image" src="icon-visual.svg">
+                    <span style="color: hsla(234, 85%, 45%);"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbspVisual &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 72/100</span>
+
+                </div>
+                <br>
+                
+
+                <div class="f_box" style="margin-top: 20px; color: #fdfdff;">
+                    Continue
+
+                </div>
+
+                </div>
+            </div>
+        </div>    
+    
+    
+    
+        </div>
+</body>
+</html>
